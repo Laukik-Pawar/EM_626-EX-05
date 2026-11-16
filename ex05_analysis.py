@@ -19,9 +19,8 @@ STOP = sys.argv[3] if len(sys.argv) > 3 else "stopwords_en.txt"
 OUT = "output"
 os.makedirs(OUT, exist_ok=True)
 
-# Words that appear everywhere because of the issue itself (edit after inspecting top words)
-ISSUE_WORDS = {"artificial", "intelligence", "schoolwork", "students", "student", "school",
-               "schools", "chatgpt", "tools", "tool", "pro", "con"}
+# Topic words shared by both sides of the college education debate.
+ISSUE_WORDS = {"college", "colleges", "education", "educations", "higher", "pro", "con"}
 
 stopwords = {w.strip().lower() for w in open(STOP, encoding="utf-8") if w.strip()}
 stopwords |= ISSUE_WORDS
@@ -56,9 +55,14 @@ def bigrams(sent_tokens):
 def build_network(bg, min_count=2):
     """Co-occurrence (adjacent-word) network: nodes = words, edge weight = bigram count."""
     G = nx.Graph()
-    for (a, b), n in bg.items():
-        if n >= min_count and a != b:
-            G.add_edge(a, b, weight=n)
+    pair_counts = Counter()
+    for (first, second), count in bg.items():
+        if first != second:
+            pair = tuple(sorted((first, second)))
+            pair_counts[pair] += count
+    for (first, second), count in pair_counts.items():
+        if count >= min_count:
+            G.add_edge(first, second, weight=count)
     return G
 
 
