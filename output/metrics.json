@@ -1,0 +1,392 @@
+{
+  "pro": {
+    "raw_words": 1487,
+    "clean_tokens": 767,
+    "unique_words": 377,
+    "lexical_diversity": 0.4915254237288136,
+    "vader_raw": {
+      "neg": 0.031,
+      "neu": 0.88,
+      "pos": 0.089,
+      "compound": 0.9979
+    },
+    "vader_clean": {
+      "neg": 0.055,
+      "neu": 0.795,
+      "pos": 0.151,
+      "compound": 0.9973
+    },
+    "sentence_mean_compound": 0.17792413793103448,
+    "sentences_pos_neg_neu": [
+      30,
+      9,
+      19
+    ],
+    "top_words": [
+      [
+        "college",
+        41
+      ],
+      [
+        "percent",
+        37
+      ],
+      [
+        "graduates",
+        29
+      ],
+      [
+        "high",
+        21
+      ],
+      [
+        "people",
+        14
+      ],
+      [
+        "jobs",
+        12
+      ],
+      [
+        "degree",
+        9
+      ],
+      [
+        "diverse",
+        9
+      ],
+      [
+        "degrees",
+        8
+      ],
+      [
+        "education",
+        8
+      ],
+      [
+        "compared",
+        8
+      ],
+      [
+        "likely",
+        8
+      ],
+      [
+        "job",
+        7
+      ],
+      [
+        "higher",
+        7
+      ],
+      [
+        "children",
+        7
+      ]
+    ],
+    "top_bigrams": [
+      [
+        "college graduates",
+        18
+      ],
+      [
+        "high graduates",
+        11
+      ],
+      [
+        "compared percent",
+        7
+      ],
+      [
+        "percent high",
+        7
+      ],
+      [
+        "percent college",
+        6
+      ],
+      [
+        "graduates percent",
+        5
+      ],
+      [
+        "college degrees",
+        4
+      ],
+      [
+        "high diploma",
+        3
+      ],
+      [
+        "associate degree",
+        3
+      ],
+      [
+        "jobs requiring",
+        3
+      ],
+      [
+        "bachelor degree",
+        3
+      ],
+      [
+        "people college",
+        3
+      ],
+      [
+        "percent people",
+        3
+      ],
+      [
+        "plus college",
+        3
+      ],
+      [
+        "graduates reported",
+        3
+      ]
+    ],
+    "network": {
+      "nodes": 43,
+      "edges": 46,
+      "density": 0.05094130675526024,
+      "avg_degree": 2.13953488372093,
+      "avg_clustering": 0.05778885197489849,
+      "connected_components": 4,
+      "giant_component_share": 0.8372093023255814,
+      "avg_path_length_giant": 3.5825396825396827,
+      "diameter_giant": 9,
+      "communities": 10,
+      "modularity": 0.48625849674800725,
+      "top_degree": [
+        "percent",
+        "college",
+        "high",
+        "graduates",
+        "jobs",
+        "degree",
+        "education",
+        "associate"
+      ],
+      "top_betweenness": [
+        "percent",
+        "college",
+        "high",
+        "graduates",
+        "associate",
+        "degree",
+        "children",
+        "jobs"
+      ]
+    }
+  },
+  "con": {
+    "raw_words": 1561,
+    "clean_tokens": 784,
+    "unique_words": 499,
+    "lexical_diversity": 0.6364795918367347,
+    "vader_raw": {
+      "neg": 0.089,
+      "neu": 0.851,
+      "pos": 0.06,
+      "compound": -0.9893
+    },
+    "vader_clean": {
+      "neg": 0.168,
+      "neu": 0.703,
+      "pos": 0.129,
+      "compound": -0.9856
+    },
+    "sentence_mean_compound": -0.07867586206896551,
+    "sentences_pos_neg_neu": [
+      17,
+      23,
+      18
+    ],
+    "top_words": [
+      [
+        "percent",
+        33
+      ],
+      [
+        "college",
+        26
+      ],
+      [
+        "debt",
+        12
+      ],
+      [
+        "political",
+        10
+      ],
+      [
+        "loan",
+        8
+      ],
+      [
+        "saying",
+        7
+      ],
+      [
+        "jobs",
+        6
+      ],
+      [
+        "degrees",
+        6
+      ],
+      [
+        "people",
+        6
+      ],
+      [
+        "graduates",
+        5
+      ],
+      [
+        "learning",
+        5
+      ],
+      [
+        "loans",
+        5
+      ],
+      [
+        "average",
+        5
+      ],
+      [
+        "trade",
+        5
+      ],
+      [
+        "require",
+        4
+      ]
+    ],
+    "top_bigrams": [
+      [
+        "percent saying",
+        7
+      ],
+      [
+        "loan debt",
+        5
+      ],
+      [
+        "college graduates",
+        4
+      ],
+      [
+        "percent women",
+        3
+      ],
+      [
+        "college degrees",
+        2
+      ],
+      [
+        "didn college",
+        2
+      ],
+      [
+        "united states",
+        2
+      ],
+      [
+        "making college",
+        2
+      ],
+      [
+        "college unaffordable",
+        2
+      ],
+      [
+        "average annual",
+        2
+      ],
+      [
+        "increased percent",
+        2
+      ],
+      [
+        "loan borrowers",
+        2
+      ],
+      [
+        "purchases percent",
+        2
+      ],
+      [
+        "women percent",
+        2
+      ],
+      [
+        "percent men",
+        2
+      ]
+    ],
+    "network": {
+      "nodes": 33,
+      "edges": 22,
+      "density": 0.041666666666666664,
+      "avg_degree": 1.3333333333333333,
+      "avg_clustering": 0.0,
+      "connected_components": 11,
+      "giant_component_share": 0.18181818181818182,
+      "avg_path_length_giant": 1.6666666666666667,
+      "diameter_giant": 2,
+      "communities": 11,
+      "modularity": 0.8374485596707819,
+      "top_degree": [
+        "college",
+        "percent",
+        "loan",
+        "trade",
+        "avoiding",
+        "graduates",
+        "degrees",
+        "saying"
+      ],
+      "top_betweenness": [
+        "college",
+        "percent",
+        "loan",
+        "trade",
+        "avoiding",
+        "graduates",
+        "degrees",
+        "saying"
+      ]
+    }
+  },
+  "distinctive_pro": [
+    "graduates",
+    "high",
+    "college",
+    "diverse",
+    "people",
+    "likely",
+    "compared",
+    "degree",
+    "jobs",
+    "children",
+    "study",
+    "lower"
+  ],
+  "distinctive_con": [
+    "debt",
+    "political",
+    "loan",
+    "saying",
+    "loans",
+    "trade",
+    "crisis",
+    "borrowers",
+    "said",
+    "views",
+    "having",
+    "cooling"
+  ]
+}
